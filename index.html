@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="title">
+            <h1>Recipe Finder </h1>
+        </div>
+        <div class="search-section">
+            <form>
+                <input type="text" id="search-input" placeholder="Search for recipes..." required>
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </div>
+        <div class="randomn-recipe">
+            <button type="submit" id="randomn-recipe-button">Get Random Recipe</button>
+        </div>
+        <div class="message-display" id="message-log">
+
+        </div>
+
+        <div class="recipe-container" id="recipe-grid">
+
+            <div class="recipe-item">
+                <img src="./assets/resource/image/pexels-ash-craig-122861-376464.jpg" alt="recipe">
+                <h3>recipe</h3>
+            </div>
+
+            <div class="recipe-item">
+                <img src="./assets/resource/image/pexels-ash-craig-122861-376464.jpg" alt="recipe">
+                <h3>recipe</h3>
+            </div>
+
+            <div class="recipe-item">
+                <img src="./assets/resource/image/pexels-ash-craig-122861-376464.jpg" alt="recipe">
+                <h3>recipe</h3>
+            </div>
+
+        </div>
+
+        <div class="modal-container " id="recipe-modal">
+            <div class="modal-content">
+                <button class="modal-close-btn" id="modal-close-btn">+</button>
+                <div id="recipe-detials">
+
+                    <h2>recipe</h2>
+                    <img src="./assets/resource/image/pexels-ash-craig-122861-376464.jpg" alt="recipe">
+
+                    <h3>caterory:food</h3>
+                    <h3>caterory:food</h3>
+                    <h3>caterory:food</h3>
+
+                    <ul>
+                        <li>ingredients</li>
+                        <li>ingredients</li>
+                        <li>ingredients</li>
+                    </ul>
+
+                    <h3>Instructions</h3>
+                    <p>
+                        Instructions for the recipe
+                    </p>
+
+                    <h3>vedio recipe</h3>
+                    <div class="video-wrapper">
+                        <a href="https://www.youtube.com/" target="_blank">Watch on Youtube</a>
+                    </div>
+
+                    <div class="source-wrapper">
+                        <a href="https://en.wikipedia.org/wiki/Wiki" target="_blank">View Recipe Source</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
