@@ -143,9 +143,103 @@ body {
     z-index: 1000;
     opacity: 1;
     visibility: visible;
+    backdrop-filter: blur(3px);
 }
 
 .modal-container.hidden{
     opacity: 0;
-    /* visibility: hidden; */
+    visibility: hidden;
+}
+
+.modal-content{
+    background-color: white;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y:auto ;
+    box-shadow: 0px 10px 30px hsla(0, 0%, 0%, 0.15);
+    border-radius: 8px;
+    padding: 35px 40px;
+    position: relative;
+}
+
+.modal-content button{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--light-bg);
+    border: 1px solid hsl(210, 16%, 93%);
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #6c757d;
+    transform: rotate(45deg);
+    transition: all 0.2 ease;
+}
+
+.modal-close-btn:hover{
+    transform: rotate(135deg);
+    color: var(--text-color);
+}
+
+#recipe-detials h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+#recipe-detials img{
+    width: 100% ;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.1);
+}
+
+#recipe-detials h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+#recipe-detials ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 25px;
+}
+
+#recipe-detials li{
+    padding: 8px 0px ;
+    border-bottom: 1px dashed hsl(120, 7%, 92%);
+    font-size: 0.95rem;
+}
+
+#recipe-detials li:last-child{
+    border-bottom: none;
+}
+
+#recipe-detials p{
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+#recipe-detials a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#recipe-detials a:hover{
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+#recipe-detials .video-wrapper{
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
